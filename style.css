@@ -15,3 +15,20 @@
 
 .lang-switch{display:inline-block;border:1px solid var(--blue);padding:4px 10px;color:var(--blue);font-weight:700;text-decoration:none;border-radius:2px}.lang-switch:hover{background:var(--blue);color:#fff}
 .jp-page{font-family:"Noto Sans JP",sans-serif}.jp-page h1{line-height:1.45}.jp-page .section p{line-height:2}.jp-page .jp-kicker{font-size:12px;letter-spacing:.12em;color:var(--blue);font-weight:700}.jp-page .jp-list{border-top:1px solid var(--line);margin-top:28px}.jp-page .jp-list article{padding:22px 0;border-bottom:1px solid var(--line)}.jp-page .jp-list h3{margin:4px 0 8px}.jp-page .jp-lang{font-size:13px;color:var(--muted)}
+
+/* Student research archive */
+.research-hero{padding:82px 10vw 70px;display:grid;grid-template-columns:1.35fr .65fr;gap:56px;align-items:end;background:linear-gradient(115deg,#f2f7f6,#e4eff0)}
+.research-hero h1{font-size:clamp(38px,5vw,62px);margin:12px 0 20px}
+.research-hero>div>p:not(.eyebrow):not(.lead){max-width:760px;color:#42545d}
+.research-hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#cbdcdb}
+.research-hero-stats div{background:#fff;padding:22px}.research-hero-stats div:last-child{grid-column:1/-1}
+.research-hero-stats strong{display:block;color:var(--blue);font-size:30px;line-height:1.2}.research-hero-stats span{font-size:11px;color:var(--muted)}
+.student-research-promo{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.thesis-year{margin:44px 0 58px}.thesis-year-head{display:grid;grid-template-columns:92px 1fr auto;align-items:end;gap:20px;padding-bottom:14px;border-bottom:2px solid var(--ink)}
+.thesis-year-head>span{font-size:34px;font-weight:800;color:var(--blue);line-height:1}.thesis-year-head h3{margin:0;font-size:21px}.thesis-year-head small{color:var(--muted)}
+.thesis-list{list-style:none;counter-reset:thesis;margin:0;padding:0}.thesis-list li{counter-increment:thesis;position:relative;padding:20px 18px 20px 58px;border-bottom:1px solid var(--line)}
+.thesis-list li:before{content:counter(thesis,decimal-leading-zero);position:absolute;left:8px;top:21px;font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--blue)}
+.thesis-list h4{font-size:16px;line-height:1.6;margin:0;font-weight:650}.thesis-list p{font-size:13px;line-height:1.75!important;color:var(--muted);margin:5px 0 0}
+.jp-thesis h4{font-size:16px;font-weight:600}.translation-note{margin-top:60px!important;padding:18px 20px;background:var(--pale);border-left:3px solid var(--blue);font-size:13px!important;color:var(--muted)}
+@media(max-width:850px){.research-hero{grid-template-columns:1fr;padding:65px 8vw}.thesis-year-head{grid-template-columns:80px 1fr}.thesis-year-head small{grid-column:2}}
+@media(max-width:520px){.research-hero-stats{grid-template-columns:1fr 1fr}.thesis-year-head{grid-template-columns:1fr;gap:6px}.thesis-year-head small{grid-column:1}.thesis-list li{padding-left:44px}.thesis-list h4{font-size:15px}}
